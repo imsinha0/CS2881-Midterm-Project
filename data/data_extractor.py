@@ -73,13 +73,13 @@ else:
     index, docs, embedder = build_index()
     docs_texts = [d.page_content for d in docs]
 
-def retrieve(query, top_k=5): #query should be a list of strings
+def retrieve(query, num_chunks = 2): #query should be a list of strings
     """Quickly retrieve relevant chunks using the saved index."""
     if isinstance(query, str):
         query = [query]
     output = []
     for q in query: 
         q_emb = embedder.encode([q], convert_to_numpy=True)
-        D, I = index.search(q_emb, top_k)
+        D, I = index.search(q_emb, num_chunks)
         output.extend([docs_texts[i] for i in I[0]])
     return output
