@@ -1,0 +1,21 @@
+[project]
+name = "cs2881-midterm-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sympy==1.14.0",
+    "tenacity==9.1.2",
+    "threadpoolctl==3.6.0",
+    "tokenizers==0.22.1",
+    "torch==2.9.0",
+    "tqdm==4.67.1",
+    "transformers==4.57.1",
+    "typing-extensions==4.15.0",
+    "typing-inspection==0.4.2",
+    "tzdata==2025.2",
+    "urllib3==2.5.0",
+    "xxhash==3.6.0",
+    "zstandard==0.25.0",
+]
