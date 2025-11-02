@@ -20,13 +20,8 @@
 
 ## Reproducing Main Results
 
-4. **Install the required NLTK module:**
 
-   ```bash
-   uv pip install nltk
-   ```
-
-5. **Download NLTK data ("punkt_tab"):**
+4. **Download NLTK data ("punkt_tab"):**
 
    ```bash
    uv run python
@@ -41,7 +36,7 @@
 
    Press <kbd>Ctrl</kbd>+<kbd>D</kbd> (or exit) to leave the Python prompt.
 
-6. **Run the main experiment:**
+5. **Run the main experiment:**
 
    ```bash
    uv run python main.py
